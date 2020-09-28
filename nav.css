@@ -1,0 +1,83 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/eye-691269_1920.jpg);
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.menu-bar {
+    background-color: rgb(10, 149, 214);
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-bar ul li {
+    width: 190px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-style: italic;
+    color: rgb(228, 238, 237);
+}
+
+.active,
+.menu-bar ul li:hover {
+    background-color: rgb(212, 202, 106);
+    border-radius: 1;
+}
+
+.menu-bar ul li:active {
+    background-color: red;
+    border: radius 2px;
+}
+
+.menu-bar .fa {
+    margin-right: 8px;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: rgb(185, 157, 157);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 15px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: o;
+    text-align: center;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:hover {
+    color: rgb(4, 5, 5);
+}
